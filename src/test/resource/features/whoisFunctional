@@ -1,0 +1,48 @@
+Feature: Functional test
+  As a tester
+  I want to aggregate for all resource type of member org-hdl
+  By calculating ipv4 allocation range
+
+  Scenario: Aggregation
+    Then All resources of ORG-HDL with Billing Category should be within range
+      | ORG-HDL           | Billing Category |
+      | ORG-EISL2-AFRINIC | LIR extra small  |
+      | ORG-IS33-AFRINIC  | LIR extra small  |
+      | ORG-UOCL1-AFRINIC | LIR extra small  |
+      | ORG-GdId1-AFRINIC | LIR very small   |
+      | ORG-sCTL1-AFRINIC | LIR very small   |
+      | ORG-AoL2-AFRINIC  | LIR very small   |
+      | ORG-ECN1-AFRINIC  | LIR small        |
+      | ORG-AILC1-AFRINIC | LIR small        |
+      | ORG-AA21-AFRINIC  | LIR small        |
+      | ORG-vm1-AFRINIC   | LIR medium       |
+      | ORG-Au2-AFRINIC   | LIR medium       |
+      | ORG-CKL1-AFRINIC  | LIR medium       |
+      | ORG-TA39-AFRINIC  | LIR large        |
+      | ORG-APTc1-AFRINIC | LIR large        |
+      | ORG-Al8-AFRINIC   | LIR large        |
+      | ORG-AM2-AFRINIC   | LIR very large   |
+      | ORG-VNL1-AFRINIC  | LIR very large   |
+      | ORG-ADN1-AFRINIC  | LIR very large   |
+      | ORG-CIL1-AFRINIC  | LIR extra large  |
+      | ORG-EA20-AFRINIC  | LIR extra large  |
+      | ORG-EM1-AFRINIC   | LIR extra large  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

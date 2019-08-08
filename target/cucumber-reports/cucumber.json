@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Aggregation",
+        "description": "",
+        "id": "functional-test;aggregation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5451983977,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "All resources of ORG-HDL with Billing Category should be within range",
+            "match": {
+              "location": "StepDefinition.all_resources_should_be_within_range_for_with_category(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ORG-HDL",
+                  "Billing Category"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-EISL2-AFRINIC",
+                  "LIR extra small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-IS33-AFRINIC",
+                  "LIR extra small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-UOCL1-AFRINIC",
+                  "LIR extra small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-GdId1-AFRINIC",
+                  "LIR very small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-sCTL1-AFRINIC",
+                  "LIR very small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-AoL2-AFRINIC",
+                  "LIR very small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-ECN1-AFRINIC",
+                  "LIR small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-AILC1-AFRINIC",
+                  "LIR small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-AA21-AFRINIC",
+                  "LIR small"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-vm1-AFRINIC",
+                  "LIR medium"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-Au2-AFRINIC",
+                  "LIR medium"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-CKL1-AFRINIC",
+                  "LIR medium"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-TA39-AFRINIC",
+                  "LIR large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-APTc1-AFRINIC",
+                  "LIR large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-Al8-AFRINIC",
+                  "LIR large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-AM2-AFRINIC",
+                  "LIR very large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-VNL1-AFRINIC",
+                  "LIR very large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-ADN1-AFRINIC",
+                  "LIR very large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-CIL1-AFRINIC",
+                  "LIR extra large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-EA20-AFRINIC",
+                  "LIR extra large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-EM1-AFRINIC",
+                  "LIR extra large"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Functional test",
+    "description": "  As a tester\n  I want to aggregate for all resource type of member org-hdl\n  By calculating ipv4 allocation range",
+    "id": "functional-test",
+    "keyword": "Feature",
+    "uri": "src/test/resource/features/whoisFunctional"
+  }
+]
