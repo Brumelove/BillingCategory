@@ -1,31 +1,14 @@
 package cidr;
 
-import inet.ipaddr.*;
+import inet.ipaddr.IPAddress;
+import inet.ipaddr.IPAddressSeqRange;
+import inet.ipaddr.IPAddressString;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Calculator {
     private String cidrsize;
 
-
-
-    public static void main(String[] args) throws AddressStringException {
-        System.out.println("Enter The First Value");
-        Scanner scanner = new Scanner(System.in);
-
-        String firstValue = scanner.nextLine();
-
-        System.out.println("Enter The Second Value");
-        String secondValue = scanner.nextLine();
-
-        System.out.println("Enter the operator");
-        String operator = scanner.nextLine();
-
-        System.out.println(performCalculation(firstValue, secondValue, operator));
-
-
-    }
 
     public String toPrefixBlocks(String str1, String str2) {
 

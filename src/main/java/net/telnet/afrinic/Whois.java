@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 public class Whois {
 
+
     private String part1;
     private String part2;
     private static String inetnum = "inetnum";
@@ -23,6 +24,16 @@ public class Whois {
     private int inetnumcount;
     private int inet6numcount;
     private int autnumcount;
+
+    public String getResults() {
+        return results;
+    }
+
+    public void setResults(String results) {
+        this.results = results;
+    }
+
+    private String results;
 
     public String getFinalresult() {
         return finalresult;
@@ -38,10 +49,10 @@ public class Whois {
 
     public static void main(String[] args) throws Exception {
         Whois whois = new Whois();
-        Calculator calculator = new Calculator();
         whois.performWhoisQuery("-T inetnum -T inet6num -T aut-num -i org -K" +
-                " ORG-EOOL1-AFRINIC");
-        calculator.toPrefixBlocks(whois.part1, whois.part2);
+                " ORG-Eool1-AFRINIC");
+        ObjectType objectType = new ObjectType();
+        objectType.ipv6contains(whois.getResults());
 
 
     }
@@ -51,9 +62,10 @@ public class Whois {
         List<List<String>> whoisObjectList = new ArrayList<>();
         Scanner scanner = new Scanner(performWhoisQuery(nameToQuery, "whois.afrinic.net", 43));
         while (scanner.hasNextLine()) {
-            List<String> lineTokenList = new ArrayList<String>();
+            List<String> lineTokenList = new ArrayList<>();
             WhoisObject wo = new WhoisObject();
             Scanner lineScanner = new Scanner(scanner.nextLine());
+
             lineScanner.useDelimiter(":");
             while (lineScanner.hasNext()) {
                 String token = lineScanner.next();
@@ -62,13 +74,15 @@ public class Whois {
                 }
             }
             lineScanner.close();
-            if (lineTokenList.size() == 2) {
+            if (lineTokenList.size() == 0) {
+                whoisObjects.add(convert(whoisObjectList));
+            } else if (lineTokenList.size() == 2) {
                 whoisObjectList.add(lineTokenList);
                 wo.add(lineTokenList.get(0), lineTokenList.get(1));
             }
 
         }
-        convert();
+
 
         String listString = whoisObjectList.stream().map(Object::toString).collect(Collectors.joining(","));
 
@@ -80,6 +94,7 @@ public class Whois {
         System.out.println("inetnum: " + getInetnumcount() + " " +
                 "inet6num: " + getInet6numcount() + " " +
                 "autnum: " + getAutnumcount());
+
         HashMap<String, List<String>> keyval = new HashMap<>();
 
         for (int i = 0; i < whoisObjectList.size(); i++) {
@@ -112,27 +127,45 @@ public class Whois {
         BillingCategory billingCategory = new BillingCategory();
 
 
-        System.out.println("CIDRSize: " + finalresult + " --> " + billingCategory.bc(finalresult) + "\n");
+        System.out.println("CIDRSize: " + finalresult + " --> " + billingCategory.bc(finalresult) + "\n" +
+                billingCategory.testAllocationSize(finalresult,
+                        billingCategory.determineBillingCategoryString(finalresult))
+                + billingCategory.determineBillingCategoryString(finalresult));
 
 
         scanner.close();
-
         return whoisObjects;
     }
 
-    private String convert() {
+    private WhoisObject convert(List<List<String>> whoisObjectList) {
+        WhoisObject whoisObject = new WhoisObject();
 
+        //System.out.println(whoisObjectList);
+        for (List<String> attribute : whoisObjectList) {
+            if (attribute.size() > 1) {
 
+                String attributeName = attribute.get(0);
+                String attributeValue = attribute.get(1);
 
-        return null;
+                for (WhoisObject.Key key : WhoisObject.Key.values()) {
+                    if (key.getKeyAttribute().equalsIgnoreCase(attributeName)) {
+                        whoisObject.setKey(key);
+                    }
+                }
+                whoisObject.add(attributeName, attributeValue);
+
+            }
+        }
+        return whoisObject;
+
     }
 
 
     private String performWhoisQuery(String nameToQuery, String WHOIS_SERVER, int WHOIS_PORT) throws IOException {
         WhoisClient whoisClient = new WhoisClient();
         whoisClient.connect(WHOIS_SERVER, WHOIS_PORT);
-        String results = whoisClient.query(nameToQuery);
-        //System.out.println(results);
+        results = whoisClient.query(nameToQuery);
+        System.out.println(results);
         return results;
 
 
