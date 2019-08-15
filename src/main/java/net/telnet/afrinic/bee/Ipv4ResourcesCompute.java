@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Ipv4ResourcesCompute implements InternetResourceComputable {
-    private final String REGEX = "(inetnum:) (.+)";
+    private static final String REGEX = "(inetnum:) (.+)";
 
     @Override
     public int compute(String whoisResponse) {
@@ -29,7 +29,8 @@ public class Ipv4ResourcesCompute implements InternetResourceComputable {
     }
 
     private int computeCidr(int totalIps) {
-        return Double.valueOf(Math.floor(Math.log(totalIps)/Math.log(2))).intValue();
+
+        return 32 - Integer.toString(totalIps,2).length();
     }
 
     private int computeTotalNbOfIpv4Addresses(List<Ipv4Resource> ipv4Resources) {
@@ -42,7 +43,7 @@ public class Ipv4ResourcesCompute implements InternetResourceComputable {
 
     private void addToListIfNecessary(List<Ipv4Resource> ipv4Resources, Ipv4Resource ipv4Resource) {
         boolean contains = checkIfContains(ipv4Resources, ipv4Resource);
-        if (!contains) {
+        if (!contains  || toString().length() == 1) {
             ipv4Resources.add(ipv4Resource);
         }
     }

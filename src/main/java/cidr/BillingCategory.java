@@ -15,12 +15,10 @@ public class BillingCategory {
         ENDSITES_MINI
     }
 
-    public IPv4AllocationSizeCategory bc(String allocationSize) {
-        String value = allocationSize.replace("/", "");
-        int intValue = Integer.valueOf(value);
-        if (intValue > 24 && intValue <= 23)
+    public IPv4AllocationSizeCategory bc(int intValue) {
+        if (intValue > 23 && intValue <= 24)
             return IPv4AllocationSizeCategory.ENDSITES_MICRO;
-        else if (intValue > 23 && intValue <= 22)
+        else if (intValue > 22 && intValue <= 23)
             return IPv4AllocationSizeCategory.ENDSITES_MINI;
         else if (intValue > 20 && intValue == 22)
             return IPv4AllocationSizeCategory.LIR_EXTRASMALL;
@@ -47,7 +45,7 @@ public class BillingCategory {
         return null;
     }
 
-    public boolean testAllocationSize(String allocationSize, IPv4AllocationSizeCategory billingCategory) {
+    public boolean testAllocationSize(int allocationSize, IPv4AllocationSizeCategory billingCategory) {
         IPv4AllocationSizeCategory realBillingCategory = this.bc(allocationSize);
         if (realBillingCategory.equals(billingCategory)) {
             return true;
@@ -59,7 +57,7 @@ public class BillingCategory {
     public IPv4AllocationSizeCategory determineBillingCategoryString(String value) {
         switch (value) {
             case "LIR extra small":
-                return BillingCategory.IPv4AllocationSizeCategory.LIR_EXTRASMALL;
+                return IPv4AllocationSizeCategory.LIR_EXTRASMALL;
             case "LIR very small":
                 return IPv4AllocationSizeCategory.LIR_VERYSMALL;
             case "LIR small":

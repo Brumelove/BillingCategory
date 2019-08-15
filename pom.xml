@@ -21,6 +21,22 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>artifactory.mu.afrinic.net-releases</name>
+            <url>http://artifactory.mu.afrinic.net/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artifactory.mu.afrinic.net-snapshots</name>
+            <url>http://artifactory.mu.afrinic.net/artifactory/libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
     <dependencies>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -61,8 +77,11 @@
             <artifactId>commons-io</artifactId>
             <version>1.3.2</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>net.afrinic.myafrinic</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0.7-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.asynchttpclient</groupId>
@@ -70,4 +89,5 @@
             <version>2.2.0</version>
         </dependency>
     </dependencies>
+
 </project>

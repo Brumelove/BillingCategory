@@ -2,13 +2,15 @@ package net.telnet.afrinic.bee;
 
 import net.afrinic.myafrinic.commons.whois.Ipv6Resource;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Ipv6ResourcesCompute implements InternetResourceComputable {
-    private final String REGEX = "(inet6num:) (.+)";
+    private static final String REGEX = "(inet6num:) (.+)";
+
     @Override
     public int compute(String whoisResponse) {
         List<Ipv6Resource> ipv6Resources = new ArrayList<>();
@@ -20,18 +22,19 @@ public class Ipv6ResourcesCompute implements InternetResourceComputable {
             Ipv6Resource ipv6Resource = Ipv6Resource.parse(ipv6Key);
             addToListIfNecessary(ipv6Resources, ipv6Resource);
         }
-        int totalIps = computeTotalNbOfIpv6Addresses(ipv6Resources);
+        BigInteger totalIps = computeTotalNbOfIpv6Addresses(ipv6Resources);
         int finalCidr = computeCidr(totalIps);
         return finalCidr;
     }
-    private int computeCidr(int totalIps) {
-        return Double.valueOf(Math.floor(Math.log(totalIps)/Math.log(2))).intValue();
+
+    private int computeCidr(BigInteger totalIps) {
+        return 128 - (totalIps.toString(2).length());
     }
 
-    private int computeTotalNbOfIpv6Addresses(List<Ipv6Resource> ipv6Resources) {
-        int total = 0;
+    private BigInteger computeTotalNbOfIpv6Addresses(List<Ipv6Resource> ipv6Resources) {
+        BigInteger total = BigInteger.ZERO;
         for (Ipv6Resource ipv6Resource : ipv6Resources) {
-            total += ipv6Resource.end().intValue() - ipv6Resource.begin().intValue() + 1;
+            total = total.add(ipv6Resource.end().subtract(ipv6Resource.begin())).add(BigInteger.ONE);
         }
         return total;
     }

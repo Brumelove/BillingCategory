@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.994 sec
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.837 sec <<< FAILURE!
+Aggregation(Functional test)  Time elapsed: 0.214 sec  <<< ERROR!
+java.lang.NullPointerException
+	at cidr.BillingCategory.testAllocationSize(BillingCategory.java:50)
+	at stepdefs.StepDefinition.all_resources_should_be_within_range_for_with_category(StepDefinition.java:47)
+	at ✽.All resources of ORG-HDL with Billing Category should be within range(src/test/resource/features/whoisFunctional:7)
+

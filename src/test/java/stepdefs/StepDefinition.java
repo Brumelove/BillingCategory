@@ -3,9 +3,8 @@ package stepdefs;
 import cidr.BillingCategory;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
-import net.telnet.afrinic.Whois;
+import net.telnet.afrinic.bee.WhoisQuery;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -14,17 +13,18 @@ import static org.junit.Assert.assertEquals;
 
 
 public class StepDefinition {
-    Whois whois = new Whois();
+    WhoisQuery whoisQuery = new WhoisQuery();
     BillingCategory billingCategory = new BillingCategory();
     private BillingCategory.IPv4AllocationSizeCategory ipv4BillingCategory;
     private BillingCategory.IPv4AllocationSizeCategory ipv4allocationSize;
     private String category;
     private String query;
-    private String cidrSize;
+    private int finalcidrSize;
+    private String queryString = "-T inetnum -T inet6num -T aut-num -i org -K ";
 
     @Then("^All resources of ORG-HDL with Billing Category should be within range$")
     public void all_resources_should_be_within_range_for_with_category
-            (DataTable dataTable) throws IOException {
+            (DataTable dataTable) throws Exception {
         String arg1 = "ORG-HDL";
         String arg2 = "Billing Category";
 
@@ -34,17 +34,16 @@ public class StepDefinition {
             category = list.get(i).get(arg2);
             query = list.get(i).get(arg1);
 
+           finalcidrSize = whoisQuery.run(queryString + query);
 
-            System.out.println(query);
-            whois.performWhoisQuery("-T inetnum -T inet6num -T aut-num -i org -K " + query);
-            cidrSize = whois.getFinalresult();
+
             // This line determines the billing category of all the (list.get(i).get(arg2)) values
             ipv4BillingCategory = billingCategory.determineBillingCategoryString(category);
-            ipv4allocationSize = billingCategory.bc(cidrSize);
+            ipv4allocationSize = billingCategory.bc(finalcidrSize);
 
 
         }
-        assertTrue(billingCategory.testAllocationSize(cidrSize, getIpv4BillingCategory()));
+        assertTrue(billingCategory.testAllocationSize(finalcidrSize, getIpv4BillingCategory()));
         assertEquals(ipv4allocationSize, ipv4BillingCategory);
         assertTrue(confirmed());
 
