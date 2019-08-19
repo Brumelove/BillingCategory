@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9063cb-f9a6-46d7-83dc-d38dc1af69ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cidr/refactoring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/ASNResourcesCompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/ASNResourcesCompute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/InternetResourceComputable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/InternetResourceComputable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/Ipv4ResourcesCompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/Ipv4ResourcesCompute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/Ipv6ResourcesCompute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/Ipv6ResourcesCompute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/WhoisQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/WhoisQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cidr/BillingCategory$IPv4AllocationSizeCategory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cidr/BillingCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cidr/BillingCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/Ipv4ResourcesCompute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/Ipv4ResourcesCompute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/WhoisQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/WhoisQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/StepDefinition.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/WhoisQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="103">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,10 +42,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="70">
+              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,88 +258,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="organisation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="organisation" type="462c0819:PsiDirectoryNode" />
-              <item name="compact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.afrinic.myafrinic:commons:1.0.7-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-1.0.7-20190514.090949-1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -565,26 +474,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="23" width="1157" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02690583" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1910314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Project Explorer" order="4" />
       <window_info id="DB Browser" order="5" />
       <window_info id="Job Explorer" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="0" sideWeight="0.49757674" weight="0.5695142" />
+      <window_info active="true" anchor="bottom" id="FindBugs-IDEA" order="0" sideWeight="0.49757674" visible="true" weight="0.5695142" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3277592" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48440066" weight="0.49916247" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" visible="true" weight="0.52261305" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48440066" weight="0.34673366" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" weight="0.30150753" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49835795" weight="0.3277592" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.050167225" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49261084" weight="0.40635452" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49261084" weight="0.40536013" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5024233" side_tool="true" weight="0.638796" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49014777" weight="0.32274246" />
       <window_info anchor="bottom" id="Console" order="13" />
@@ -650,21 +558,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java</url>
-          <line>73</line>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="141" />
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java</url>
-          <line>70</line>
+          <line>80</line>
           <properties />
-          <option name="timeStamp" value="144" />
+          <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java</url>
-          <line>72</line>
+          <line>74</line>
           <properties />
-          <option name="timeStamp" value="145" />
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -825,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/resources/IpResourceType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -843,20 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="108" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/resources/ResourceType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/organisation/BillingCategory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -911,9 +798,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/resources/IpResourceType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/organisation/BillingCategory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/resources/ResourceType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/WhoisQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="103">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -923,10 +831,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="70">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
           </folding>
         </state>
       </provider>

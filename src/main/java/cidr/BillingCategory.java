@@ -30,7 +30,9 @@ public enum BillingCategory {
         BY_RESOURCE_TYPE = new TreeMap<>();
         for (BillingCategory billingCategory : BillingCategory.values()) {
             ResourceType thisBillingCategoryResourceType = billingCategory.resourceType;
-            Set<BillingCategory> set = BY_RESOURCE_TYPE.get(thisBillingCategoryResourceType);
+
+            Set<BillingCategory> set = byResourceType(thisBillingCategoryResourceType);
+            BY_RESOURCE_TYPE.put(thisBillingCategoryResourceType, set);
             if (set == null) {
                 set = new TreeSet();
                 BY_RESOURCE_TYPE.put(thisBillingCategoryResourceType, set);
@@ -56,24 +58,26 @@ public enum BillingCategory {
     }
 
     public int getMaxValue() {
-        return this.maxValue;
+        return maxValue;
     }
 
     public int getMinValue() {
-        return this.minValue;
+        return minValue;
     }
 
     public ResourceType getResourceType() {
-        return this.resourceType;
+        return resourceType;
     }
 
     public static BillingCategory getBC(ResourceType resourceType, Integer vCidr) {
         Set<BillingCategory> billingCategories = byResourceType(resourceType);
         for (BillingCategory bCategory : billingCategories) {
-            if (vCidr > bCategory.getMaxValue()  && vCidr <= bCategory.getMinValue()) {
-                bCategory.getResourceType();
+            if (bCategory.getMaxValue() < vCidr && bCategory.getMinValue() >= vCidr) {
+               return bCategory;
+
             }
-            return bCategory;
+
+
         }
 
         throw new IllegalArgumentException("Invalid billing category for " + resourceType + " corresponding to " + vCidr);
