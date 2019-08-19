@@ -78,7 +78,7 @@
 //        return null;
 //    }
 //    public boolean testAllocationSize(int v4Cidr, BillingCategory billingCategory) {
-//        BillingCategory realBillingCategory = determineBC(0, 1,1);
+//        BillingCategory realBillingCategory = getBC()m;
 //        if (realBillingCategory.equals(billingCategory)) {
 //            return true;
 //        }

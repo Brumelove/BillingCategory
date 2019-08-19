@@ -18,9 +18,9 @@ public enum BillingCategory {
     LIR_LARGE(12, 14, ResourceType.IPv4),
     LIR_VERY_LARGE(10, 12, ResourceType.IPv4),
     LIR_EXTRA_LARGE(1, 10, ResourceType.IPv4),
-    IPV6_SMALL(0, 32, ResourceType.IPv6),
-    IPV6_LARGE(32, 48, ResourceType.IPv6),
-    IPV6_PI_EU(0, 48, ResourceType.IPv6),
+    IPV6_SMALL(32, 47, ResourceType.IPv6),
+    IPV6_LARGE(0, 31, ResourceType.IPv6),
+    IPV6_PI_EU(48, 128, ResourceType.IPv6),
     EU_AS(0, Integer.MAX_VALUE, ResourceType.ASN);
 
 
@@ -32,7 +32,6 @@ public enum BillingCategory {
             ResourceType thisBillingCategoryResourceType = billingCategory.resourceType;
 
             Set<BillingCategory> set = byResourceType(thisBillingCategoryResourceType);
-            BY_RESOURCE_TYPE.put(thisBillingCategoryResourceType, set);
             if (set == null) {
                 set = new TreeSet();
                 BY_RESOURCE_TYPE.put(thisBillingCategoryResourceType, set);
@@ -43,26 +42,26 @@ public enum BillingCategory {
 
 
     private final ResourceType resourceType;
-    private final int maxValue;
-    private final int minValue;
+    private final int maxCidr;
+    private final int minCidr;
 
 
-    BillingCategory(int maxValue, int minValue, ResourceType resourceType) {
+    BillingCategory(int maxCidr, int minCidr, ResourceType resourceType) {
         this.resourceType = resourceType;
-        this.maxValue = maxValue;
-        this.minValue = minValue;
+        this.maxCidr = maxCidr;
+        this.minCidr = minCidr;
     }
 
     public static Set<BillingCategory> byResourceType(ResourceType resourceType) {
         return BY_RESOURCE_TYPE.get(resourceType);
     }
 
-    public int getMaxValue() {
-        return maxValue;
+    public int getMaxCidr() {
+        return maxCidr;
     }
 
-    public int getMinValue() {
-        return minValue;
+    public int getMinCidr() {
+        return minCidr;
     }
 
     public ResourceType getResourceType() {
@@ -72,7 +71,7 @@ public enum BillingCategory {
     public static BillingCategory getBC(ResourceType resourceType, Integer vCidr) {
         Set<BillingCategory> billingCategories = byResourceType(resourceType);
         for (BillingCategory bCategory : billingCategories) {
-            if (bCategory.getMaxValue() < vCidr && bCategory.getMinValue() >= vCidr) {
+            if (bCategory.getMaxCidr() <= vCidr && bCategory.getMinCidr() >= vCidr) {
                return bCategory;
 
             }
