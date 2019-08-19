@@ -11,7 +11,7 @@ public class Ipv4ResourcesCompute implements InternetResourceComputable {
     private static final String REGEX = "(inetnum:) (.+)";
 
     @Override
-    public int compute(String whoisResponse) {
+    public Integer compute(String whoisResponse) {
         List<Ipv4Resource> ipv4Resources = new ArrayList<>();
 
         Pattern resourcePattern = Pattern.compile(REGEX);
@@ -24,13 +24,11 @@ public class Ipv4ResourcesCompute implements InternetResourceComputable {
 
         // at this stage, we have all the top level ipv4 blocks
         int totalIps = computeTotalNbOfIpv4Addresses(ipv4Resources);
-        int finalCidr = computeCidr(totalIps);
-        return finalCidr;
+        return computeCidr(totalIps);
     }
 
-    private int computeCidr(int totalIps) {
-
-        return 32 - Integer.toString(totalIps,2).length();
+    private Integer computeCidr(int totalIps) {
+        return totalIps > 0 ? 32 - Integer.toString(totalIps,2).length() : null;
     }
 
     private int computeTotalNbOfIpv4Addresses(List<Ipv4Resource> ipv4Resources) {
@@ -43,7 +41,7 @@ public class Ipv4ResourcesCompute implements InternetResourceComputable {
 
     private void addToListIfNecessary(List<Ipv4Resource> ipv4Resources, Ipv4Resource ipv4Resource) {
         boolean contains = checkIfContains(ipv4Resources, ipv4Resource);
-        if (!contains  || toString().length() == 1) {
+        if (!contains  ) {
             ipv4Resources.add(ipv4Resource);
         }
     }

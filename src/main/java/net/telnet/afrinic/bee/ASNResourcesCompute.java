@@ -7,16 +7,16 @@ public class ASNResourcesCompute implements InternetResourceComputable {
     private static final String REGEX = "(aut-num:) (.+)";
 
     @Override
-    public int compute(String whoisResponse) {
+    public Integer compute(String whoisResponse) {
 
-        int count = 0;
+        Integer count = 0;
         Pattern resourcePattern = Pattern.compile(REGEX);
         Matcher matcher = resourcePattern.matcher(whoisResponse);
 
         while (matcher.find()) {
             count++;
         }
-        return count;
+        return count > 0 ? count : null;
     }
 
 

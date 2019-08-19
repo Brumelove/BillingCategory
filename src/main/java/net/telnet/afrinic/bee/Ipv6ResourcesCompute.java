@@ -12,7 +12,7 @@ public class Ipv6ResourcesCompute implements InternetResourceComputable {
     private static final String REGEX = "(inet6num:) (.+)";
 
     @Override
-    public int compute(String whoisResponse) {
+    public Integer compute(String whoisResponse) {
         List<Ipv6Resource> ipv6Resources = new ArrayList<>();
 
         Pattern resourcePattern = Pattern.compile(REGEX);
@@ -23,12 +23,11 @@ public class Ipv6ResourcesCompute implements InternetResourceComputable {
             addToListIfNecessary(ipv6Resources, ipv6Resource);
         }
         BigInteger totalIps = computeTotalNbOfIpv6Addresses(ipv6Resources);
-        int finalCidr = computeCidr(totalIps);
-        return finalCidr;
+        return computeCidr(totalIps);
     }
 
-    private int computeCidr(BigInteger totalIps) {
-        return 128 - (totalIps.toString(2).length());
+    private Integer computeCidr(BigInteger totalIps) {
+        return !BigInteger.ZERO.equals(totalIps) ? 128 - (totalIps.toString(2).length()) : null;
     }
 
     private BigInteger computeTotalNbOfIpv6Addresses(List<Ipv6Resource> ipv6Resources) {
