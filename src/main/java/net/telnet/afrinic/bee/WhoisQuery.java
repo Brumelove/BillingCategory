@@ -11,7 +11,7 @@ public class WhoisQuery {
     private static final int WHOIS_PORT = 43;
 
 
-    private String queryString = "-T inetnum -T inet6num -T aut-num -i org -K ORG-ACL6-AFRINIC";
+    private String queryString = "-T inetnum -T inet6num -T aut-num -i org -K ORG-CKL1-AFRINIC";
 
     private Ipv4ResourcesCompute ipv4ResourcesCompute = new Ipv4ResourcesCompute();
     private Ipv6ResourcesCompute ipv6ResourcesCompute = new Ipv6ResourcesCompute();
@@ -44,6 +44,7 @@ public class WhoisQuery {
         }
 
     }
+
 
 
     public static void main(String args[]) throws Exception {

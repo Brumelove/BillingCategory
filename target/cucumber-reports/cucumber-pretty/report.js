@@ -87,31 +87,31 @@ formatter.step({
     {
       "cells": [
         "ORG-CKL1-AFRINIC",
-        "LIR medium"
+        "LIR large"
       ]
     },
     {
       "cells": [
         "ORG-TA39-AFRINIC",
-        "LIR large"
+        "LIR extra small"
       ]
     },
     {
       "cells": [
         "ORG-APTc1-AFRINIC",
-        "LIR large"
+        "LIR extra small"
       ]
     },
     {
       "cells": [
         "ORG-Al8-AFRINIC",
-        "LIR large"
+        "LIR extra small"
       ]
     },
     {
       "cells": [
         "ORG-AM2-AFRINIC",
-        "LIR very large"
+        "LIR small"
       ]
     },
     {
@@ -123,7 +123,7 @@ formatter.step({
     {
       "cells": [
         "ORG-ADN1-AFRINIC",
-        "LIR very large"
+        "LIR very small"
       ]
     },
     {
@@ -135,7 +135,7 @@ formatter.step({
     {
       "cells": [
         "ORG-EA20-AFRINIC",
-        "LIR extra large"
+        "LIR large"
       ]
     },
     {
