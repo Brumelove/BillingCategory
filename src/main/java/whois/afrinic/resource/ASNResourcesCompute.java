@@ -1,4 +1,4 @@
-package net.telnet.afrinic.bee;
+package whois.afrinic.resource;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

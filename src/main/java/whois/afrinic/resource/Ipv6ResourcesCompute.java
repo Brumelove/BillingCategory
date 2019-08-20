@@ -1,4 +1,4 @@
-package net.telnet.afrinic.bee;
+package whois.afrinic.resource;
 
 import net.afrinic.myafrinic.commons.whois.Ipv6Resource;
 

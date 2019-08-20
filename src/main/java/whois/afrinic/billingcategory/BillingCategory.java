@@ -1,4 +1,4 @@
-package cidr;
+package whois.afrinic.billingcategory;
 
 import net.afrinic.myafrinic.commons.model.resources.ResourceType;
 

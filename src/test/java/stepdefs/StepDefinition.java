@@ -1,9 +1,11 @@
 package stepdefs;
 
-import cidr.BillingCategory;
+import whois.afrinic.billingcategory.BillingCategory;
+import whois.afrinic.query.WhoisQuery;
+
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
-import net.telnet.afrinic.bee.WhoisQuery;
+
 
 import java.util.List;
 import java.util.Map;
@@ -31,12 +33,9 @@ public class StepDefinition {
             query = list.get(i).get(arg1);
 
             billingCategory = whoisQuery.run(queryString + query);
-
-
         }
 
         assertTrue(confirmed());
-
     }
 
 

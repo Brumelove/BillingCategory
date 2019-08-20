@@ -1,9 +1,12 @@
-package net.telnet.afrinic.bee;
+package whois.afrinic.query;
 
-import cidr.BillingCategory;
+import whois.afrinic.billingcategory.BillingCategory;
 import net.afrinic.myafrinic.commons.model.resources.ResourceType;
 import org.apache.commons.net.whois.WhoisClient;
 import org.springframework.stereotype.Component;
+import whois.afrinic.resource.ASNResourcesCompute;
+import whois.afrinic.resource.Ipv4ResourcesCompute;
+import whois.afrinic.resource.Ipv6ResourcesCompute;
 
 @Component
 public class WhoisQuery {

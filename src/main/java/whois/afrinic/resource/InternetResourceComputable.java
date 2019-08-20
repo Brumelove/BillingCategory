@@ -1,4 +1,4 @@
-package net.telnet.afrinic.bee;
+package whois.afrinic.resource;
 
 public interface InternetResourceComputable {
     Integer compute(String whoisResponse);
