@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff9063cb-f9a6-46d7-83dc-d38dc1af69ce" name="Default Changelist" comment="" />
+    <list default="true" id="ff9063cb-f9a6-46d7-83dc-d38dc1af69ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Size.net.afrinic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cidr/CIDRUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cidr/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/ComputeCIDR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/IPv4ResourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/IPv6ResourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Whois.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/WhoisObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/WhoisQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/resource/ASNResourcesCompute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/resource/InternetResourceComputable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv6ResourcesCompute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YourTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/features/whoisFunctional" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/features/whoisFunctional" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Size.net.afrinic.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cidr/BillingCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/ASNResourcesCompute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/InternetResourceComputable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/Ipv4ResourcesCompute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/Ipv6ResourcesCompute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/telnet/afrinic/bee/WhoisQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/whoisFunctional" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/StepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whois.net.afrinic.billingcategoriser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/whois.net.afrinic.billingcategoriser.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,65 +58,32 @@
       <FILTER>stepdefs.*</FILTER>
     </SUITE>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Size.net.afrinic" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resource/features/whoisFunctional">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="149">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2189#2190#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#2280#2281#0" expanded="true" />
-                <element signature="e#2341#2342#0" expanded="true" />
-                <element signature="e#2421#2422#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -122,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Cidr_Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/CIRDUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cidr/CIRDUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/Stepdefs.java" />
@@ -154,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Whois.java" />
         <option value="$PROJECT_DIR$/src/main/java/cidr/Calculator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/ComputeCIDR.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/ObjectType.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/WhoisQuery.java" />
@@ -173,6 +174,9 @@
         <option value="$PROJECT_DIR$/src/main/java/net/telnet/afrinic/bee/WhoisQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/cidr/BillingCategory.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java" />
+        <option value="$PROJECT_DIR$/src/test/java/YourTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -200,12 +204,13 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
     <option name="y" value="23" />
-    <option name="width" value="994" />
+    <option name="width" value="879" />
     <option name="height" value="709" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -225,48 +230,60 @@
               <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="afrinic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Size.net.afrinic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="whois.net.afrinic.billingcategoriser" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Size.net.afrinic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="whois.net.afrinic.billingcategoriser" type="616d4139:PackageViewModuleNode" />
+              <item name="features" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Size.net.afrinic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="whois.net.afrinic.billingcategoriser" type="616d4139:PackageViewModuleNode" />
+              <item name="stepdefs" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Size.net.afrinic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="whois.net.afrinic.billingcategoriser" type="616d4139:PackageViewModuleNode" />
+              <item name="whois.afrinic" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Size.net.afrinic" type="58d84e3e:PackageViewProjectNode" />
+              <item name="whois.net.afrinic.billingcategoriser" type="616d4139:PackageViewModuleNode" />
+              <item name="whois.afrinic" type="1f31426a:PackageElementNode" />
+              <item name="resource" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,6 +304,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="whois.afrinic.query" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -309,39 +327,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Minority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.telnet.afrinic.Minority" />
+  <component name="RunManager" selected="JUnit.WhoisQueryTest">
+    <configuration name="WhoisQuery (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="whois.afrinic.query.WhoisQuery" />
       <module name="whois.net.afrinic.billingcategoriser" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.telnet.afrinic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Whois" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.telnet.afrinic.Whois" />
-      <module name="whois.net.afrinic.billingcategoriser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.telnet.afrinic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WhoisQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.telnet.afrinic.WhoisQuery" />
-      <module name="whois.net.afrinic.billingcategoriser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.telnet.afrinic.*" />
+          <option name="PATTERN" value="whois.afrinic.query.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -402,68 +394,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration name="WhoisQueryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="whois.net.afrinic.billingcategoriser" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WhoisQueryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration name="WhoisQueryTest.eisl2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="whois.net.afrinic.billingcategoriser" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WhoisQueryTest" />
+      <option name="METHOD_NAME" value="eisl2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WhoisQueryTest.uocl1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="whois.net.afrinic.billingcategoriser" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WhoisQueryTest" />
+      <option name="METHOD_NAME" value="uocl1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Whois" />
-      <item itemvalue="Application.Minority" />
       <item itemvalue="Application.WhoisQuery" />
       <item itemvalue="Application.WhoisQuery (1)" />
       <item itemvalue="Cucumber java.Unnamed" />
       <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.WhoisQueryTest" />
+      <item itemvalue="JUnit.WhoisQueryTest.eisl2" />
+      <item itemvalue="JUnit.WhoisQueryTest.uocl1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.WhoisQueryTest" />
         <item itemvalue="Application.WhoisQuery (1)" />
-        <item itemvalue="Application.WhoisQuery" />
-        <item itemvalue="Application.WhoisQuery" />
-        <item itemvalue="Application.Whois" />
+        <item itemvalue="JUnit.WhoisQueryTest.uocl1" />
+        <item itemvalue="JUnit.WhoisQueryTest.eisl2" />
+        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -481,35 +456,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2019.08.19 at 15h 30m 07s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest_eisl2 - 2019.08.21 at 10h 25m 56s.xml">
+      <configuration name="YourTest.eisl2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.19 at 15h 32m 16s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest_eisl2 - 2019.08.21 at 10h 26m 50s.xml">
+      <configuration name="YourTest.eisl2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 09h 35m 43s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest_uocl1 - 2019.08.21 at 10h 36m 02s.xml">
+      <configuration name="YourTest.uocl1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 09h 37m 11s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 10h 36m 08s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 09h 45m 26s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 10h 36m 13s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 12h 41m 48s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 11h 19m 20s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 12h 42m 31s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 11h 19m 38s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 12h 42m 50s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 11h 54m 45s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 12h 43m 58s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 11h 56m 19s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.08.20 at 12h 45m 20s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="YourTest - 2019.08.21 at 11h 58m 25s.xml">
+      <configuration name="YourTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -522,26 +497,59 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="994" height="709" extended-state="0" />
+    <frame x="10" y="23" width="879" height="709" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22373949" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36320192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" weight="0.035842296" />
       <window_info id="Project Explorer" order="4" />
       <window_info id="DB Browser" order="5" />
       <window_info id="Job Explorer" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" sideWeight="0.49757674" weight="0.5695142" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3277592" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48440066" weight="0.2998325" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" weight="0.050251257" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48440066" weight="0.3551089" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" weight="0.40985915" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49835795" weight="0.32663316" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.050167225" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49261084" visible="true" weight="0.40536013" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49261084" visible="true" weight="0.22613065" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5024233" side_tool="true" weight="0.638796" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49014777" weight="0.32274246" />
+      <window_info anchor="bottom" id="Console" order="13" />
+      <window_info anchor="bottom" id="DB Execution Console" order="14" />
+      <window_info anchor="bottom" id="SonarQube" order="15" />
+      <window_info anchor="right" id="Codota" order="0" weight="0.32875606" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.4972973" weight="0.24958949" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Jenkins" order="4" sideWeight="0.4972973" weight="0.32922825" />
+      <window_info anchor="right" id="Maven" order="5" sideWeight="0.4945946" weight="0.32922825" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5027027" side_tool="true" weight="0.24930362" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24717286" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" weight="0.035842296" />
+      <window_info id="Project Explorer" order="4" />
+      <window_info id="DB Browser" order="5" />
+      <window_info id="Job Explorer" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="0" sideWeight="0.49757674" weight="0.5695142" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3277592" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.48440066" visible="true" weight="0.3551089" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" weight="0.40985915" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49835795" weight="0.32663316" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.050167225" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49261084" weight="0.50753766" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5024233" side_tool="true" weight="0.638796" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49014777" weight="0.32274246" />
       <window_info anchor="bottom" id="Console" order="13" />
@@ -554,7 +562,7 @@
       <window_info anchor="right" id="Maven" order="5" sideWeight="0.4945946" weight="0.32922825" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5027027" side_tool="true" weight="0.24930362" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -596,41 +604,58 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="167" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="169" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-em1-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-ea20-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-cil1-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-adn1-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-vnl1-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-am2-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-al8-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-a-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;-T inetnum -T inet6num -T aut-num -i org -K ORG-aptc1-AFRINIC&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="filteringnet.telnet.afrinic.bee.Ipv6ResourcesCompute">
       <expression>
         <expression-string>boolean</expression-string>
@@ -640,6 +665,11 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>query</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>v6Cidr</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -647,16 +677,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/jquery-1.8.2.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/whoisFunctionalTest/TestRunner.java" />
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" />
     <entry file="file://$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -676,13 +696,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/minority" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/AfrinicMinoritySpace.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/WhoisMinority.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resource/test_read">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/test_read" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Minority.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/MinorityTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/WhoisObject.java" />
@@ -695,13 +709,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cidr/Calculator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/ComputeCIDR.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/telnet/afrinic/Whois.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cidr/IPv6AllocationSizeCategory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cidr/ASNBilling.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cidr/IPV6Billing.java" />
@@ -782,16 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv6ResourcesCompute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/ASNResourcesCompute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -816,23 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -843,17 +823,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cidr/refactoring.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cidr/refactoring.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.6/commons-net-3.6-sources.jar!/org/apache/commons/net/whois/WhoisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="131">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/jacoco.exec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv6ResourcesCompute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WhoisQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="33" column="21" selection-start-line="21" selection-start-column="12" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/resource/Ipv4ResourcesCompute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -862,30 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/features/whoisFunctional">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2189#2190#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-            <element signature="e#2341#2342#0" expanded="true" />
-            <element signature="e#2421#2422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="149">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
