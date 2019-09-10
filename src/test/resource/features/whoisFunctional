@@ -17,15 +17,15 @@ Feature: Functional test
       | ORG-AA21-AFRINIC  | LIR small        |
       | ORG-vm1-AFRINIC   | LIR medium       |
       | ORG-Au2-AFRINIC   | LIR medium       |
-      | ORG-CKL1-AFRINIC  | LIR medium       |
-      | ORG-TA39-AFRINIC  | LIR large        |
-      | ORG-APTc1-AFRINIC | LIR large        |
-      | ORG-Al8-AFRINIC   | LIR large        |
-      | ORG-AM2-AFRINIC   | LIR very large   |
+      | ORG-CKL1-AFRINIC  | LIR large        |
+      | ORG-TA39-AFRINIC  | LIR extra small  |
+      | ORG-APTc1-AFRINIC | LIR extra small  |
+      | ORG-Al8-AFRINIC   | LIR extra small  |
+      | ORG-AM2-AFRINIC   | LIR small        |
       | ORG-VNL1-AFRINIC  | LIR very large   |
-      | ORG-ADN1-AFRINIC  | LIR very large   |
+      | ORG-ADN1-AFRINIC  | LIR very small   |
       | ORG-CIL1-AFRINIC  | LIR extra large  |
-      | ORG-EA20-AFRINIC  | LIR extra large  |
+      | ORG-EA20-AFRINIC  | LIR large        |
       | ORG-EM1-AFRINIC   | LIR extra large  |
 
 

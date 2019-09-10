@@ -1,6 +1,7 @@
 package cidr;
 
-import net.telnet.afrinic.bee.ASNResourcesCompute;public class BillingCategory {
+
+public class BillingCategory {
 
     public enum IPv4AllocationSizeCategory {
 
@@ -59,7 +60,7 @@ import net.telnet.afrinic.bee.ASNResourcesCompute;public class BillingCategory {
     public IPv4AllocationSizeCategory determineBillingCategoryString(String value) {
         switch (value) {
             case "LIR extra small":
-                return ASNResourcesCompute.BillingCategory.IPv4AllocationSizeCategory.LIR_EXTRASMALL;
+                return IPv4AllocationSizeCategory.LIR_EXTRASMALL;
             case "LIR very small":
                 return IPv4AllocationSizeCategory.LIR_VERYSMALL;
             case "LIR small":
