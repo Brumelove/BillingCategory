@@ -18,10 +18,10 @@ public enum BillingCategory {
     LIR_LARGE("LIR large", 12, 14, ResourceType.IPv4),
     LIR_VERY_LARGE("LIR very large", 10, 12, ResourceType.IPv4),
     LIR_EXTRA_LARGE("LIR extra large", 1, 10, ResourceType.IPv4),
-    IPV6_SMALL("IPv6 small", 32, 47, ResourceType.IPv6),
-    IPV6_LARGE("IPv6 large", 0, 31, ResourceType.IPv6),
-    IPV6_PI_EU("IPv6 pi eu", 48, 128, ResourceType.IPv6),
-    EU_AS("EU AS", 0, Integer.MAX_VALUE, ResourceType.ASN);
+    IPV6_SMALL("LIR V6 Small", 32, 47, ResourceType.IPv6),
+    IPV6_LARGE("LIR V6 Large", 0, 31, ResourceType.IPv6),
+    IPV6_PI_EU("LIR V6 PI EU", 48, 128, ResourceType.IPv6),
+    EU_AS("End-User AS", 0, Integer.MAX_VALUE, ResourceType.ASN);
 
 
     private final static Map<ResourceType, Set<BillingCategory>> BY_RESOURCE_TYPE;
@@ -70,10 +70,6 @@ public enum BillingCategory {
         return minCidr;
     }
 
-    public ResourceType getResourceType() {
-        return resourceType;
-    }
-
     public static BillingCategory getBC(ResourceType resourceType, Integer vCidr) {
         Set<BillingCategory> billingCategories = byResourceType(resourceType);
         for (BillingCategory bCategory : billingCategories) {
@@ -88,8 +84,6 @@ public enum BillingCategory {
 
 
     }
-
-
 
 
 }

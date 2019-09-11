@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3635079190,
+              "duration": 4969789240,
               "status": "passed"
             },
             "line": 7,
@@ -145,6 +145,12 @@
                 "cells": [
                   "ORG-EM1-AFRINIC",
                   "LIR extra large"
+                ]
+              },
+              {
+                "cells": [
+                  "ORG-DE1-AFRINIC",
+                  "End-User AS and IP"
                 ]
               }
             ],

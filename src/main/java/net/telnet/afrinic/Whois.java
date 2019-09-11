@@ -47,15 +47,14 @@ public class Whois {
     Calculator calculator = new Calculator();
 
 
-    public static void main(String[] args) throws Exception {
-        Whois whois = new Whois();
-        whois.performWhoisQuery("-T inetnum -T inet6num -T aut-num -i org -K" +
-                " ORG-AFNC1-AFRINIC");
-//                " ORG-Eool1-AFRINIC");
-        WhoisQuery whoisQuery = new WhoisQuery();
-
-
-    }
+//    public static void main(String[] args) throws Exception {
+//        Whois whois = new Whois();
+//        whois.performWhoisQuery("-T inetnum -T inet6num -T aut-num -i org -K" +
+//                " ORG-AFNC1-AFRINIC");
+////                " ORG-Eool1-AFRINIC");
+//
+//
+//    }
 
     public List<WhoisObject> performWhoisQuery(String nameToQuery) throws IOException {
         List<WhoisObject> whoisObjects = new ArrayList();

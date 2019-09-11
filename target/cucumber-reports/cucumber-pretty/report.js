@@ -137,6 +137,12 @@ formatter.step({
         "ORG-EM1-AFRINIC",
         "LIR extra large"
       ]
+    },
+    {
+      "cells": [
+        "ORG-DE1-AFRINIC",
+        "End-User AS and IP"
+      ]
     }
   ],
   "keyword": "Then "
