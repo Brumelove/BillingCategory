@@ -81,7 +81,7 @@ formatter.step({
     {
       "cells": [
         "ORG-Au2-AFRINIC",
-        "LIR medium"
+        "LIR extra small"
       ]
     },
     {
@@ -118,12 +118,6 @@ formatter.step({
       "cells": [
         "ORG-VNL1-AFRINIC",
         "LIR very large"
-      ]
-    },
-    {
-      "cells": [
-        "ORG-ADN1-AFRINIC",
-        "LIR very small"
       ]
     },
     {

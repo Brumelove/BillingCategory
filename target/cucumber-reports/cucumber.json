@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4811875086,
+              "duration": 3635079190,
               "status": "passed"
             },
             "line": 7,
@@ -90,7 +90,7 @@
               {
                 "cells": [
                   "ORG-Au2-AFRINIC",
-                  "LIR medium"
+                  "LIR extra small"
                 ]
               },
               {
@@ -127,12 +127,6 @@
                 "cells": [
                   "ORG-VNL1-AFRINIC",
                   "LIR very large"
-                ]
-              },
-              {
-                "cells": [
-                  "ORG-ADN1-AFRINIC",
-                  "LIR very small"
                 ]
               },
               {

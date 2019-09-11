@@ -17,8 +17,8 @@ public class StepDefinition {
     WhoisQuery whoisQuery = new WhoisQuery();
     static BillingCategory billingCategory;
     private String category;
-    private String query;
-    private String queryString = "-T inetnum -T inet6num -T aut-num -i org -K ";
+    private String queryList;
+    private String query = "-T inetnum -T inet6num -T aut-num -i org -K ";
 
     @Then("^All resources of ORG-HDL with Billing Category should be within range$")
     public void all_resources_should_be_within_range_for_with_category
@@ -30,9 +30,9 @@ public class StepDefinition {
         for (int i = 0; i < list.size(); i++) {
 
             category = list.get(i).get(arg2);
-            query = list.get(i).get(arg1);
+            queryList = list.get(i).get(arg1);
 
-            billingCategory = whoisQuery.run(queryString + query);
+           billingCategory = ( whoisQuery.run( query + queryList));
         }
 
         assertTrue(confirmed());
