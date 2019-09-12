@@ -43,20 +43,19 @@ public class WhoisQuery {
             return BillingCategory.getBC(ResourceType.IPv6, v6Cidr);
         } else if (nbAsn != null) {
             return BillingCategory.getBC(ResourceType.ASN, nbAsn);
-        } else {
-            throw new IllegalArgumentException("No suitable value to compute the billing category");
         }
+        throw new IllegalArgumentException("No suitable value to compute the billing category");
 
     }
 
 
-
-    public static void main(String args[]) throws Exception {
-        WhoisQuery whoisQuery = new WhoisQuery();
-        System.out.println(whoisQuery.run(whoisQuery.queryString));
-
-
-    }
+//
+//    public static void main(String args[]) throws Exception {
+//        WhoisQuery whoisQuery = new WhoisQuery();
+//        System.out.println(whoisQuery.run(whoisQuery.queryString));
+//
+//
+//    }
 
 
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WhoisQuery.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Size.net.afrinic</a> &gt; <a href="index.source.html" class="el_package">whois.afrinic.query</a> &gt; <span class="el_source">WhoisQuery.java</span></div><h1>WhoisQuery.java</h1><pre class="source lang-java linenums">package whois.afrinic.query;
+
+import whois.afrinic.billingcategory.BillingCategory;
+import net.afrinic.myafrinic.commons.model.resources.ResourceType;
+import org.apache.commons.net.whois.WhoisClient;
+import org.springframework.stereotype.Component;
+import whois.afrinic.resource.ASNResourcesCompute;
+import whois.afrinic.resource.Ipv4ResourcesCompute;
+import whois.afrinic.resource.Ipv6ResourcesCompute;
+
+@Component
+<span class="fc" id="L12">public class WhoisQuery {</span>
+    private static final String WHOIS_SERVER = &quot;whois.afrinic.net&quot;;
+    private static final int WHOIS_PORT = 43;
+
+
+<span class="fc" id="L17">    private String queryString = &quot;-T inetnum -T inet6num -T aut-num -i org -K&quot; +</span>
+            &quot; ORG-ASRL1-AFRINIC&quot;;
+
+<span class="fc" id="L20">    private Ipv4ResourcesCompute ipv4ResourcesCompute = new Ipv4ResourcesCompute();</span>
+<span class="fc" id="L21">    private Ipv6ResourcesCompute ipv6ResourcesCompute = new Ipv6ResourcesCompute();</span>
+<span class="fc" id="L22">    private ASNResourcesCompute asnResourcesCompute = new ASNResourcesCompute();</span>
+
+
+    public BillingCategory run(String query) throws Exception {
+<span class="fc" id="L26">        WhoisClient whoisClient = new WhoisClient();</span>
+<span class="fc" id="L27">        whoisClient.connect(WHOIS_SERVER, WHOIS_PORT);</span>
+<span class="fc" id="L28">        String whoisResponse = whoisClient.query(query);</span>
+
+<span class="fc" id="L30">        Integer v4Cidr = ipv4ResourcesCompute.compute(whoisResponse);</span>
+<span class="fc" id="L31">        Integer v6Cidr = ipv6ResourcesCompute.compute(whoisResponse);</span>
+<span class="fc" id="L32">        Integer nbAsn = asnResourcesCompute.compute(whoisResponse);</span>
+<span class="fc" id="L33">        BillingCategory billingCategory = determineBC(v4Cidr, v6Cidr, nbAsn);</span>
+
+
+<span class="fc" id="L36">        return billingCategory;</span>
+    }
+
+    public static BillingCategory determineBC(Integer v4Cidr, Integer v6Cidr, Integer nbAsn) {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (v4Cidr != null) {</span>
+<span class="fc" id="L41">            return BillingCategory.getBC(ResourceType.IPv4, v4Cidr);</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">        } else if (v6Cidr != null) {</span>
+<span class="fc" id="L43">            return BillingCategory.getBC(ResourceType.IPv6, v6Cidr);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        } else if (nbAsn != null) {</span>
+<span class="fc" id="L45">            return BillingCategory.getBC(ResourceType.ASN, nbAsn);</span>
+        }
+<span class="fc" id="L47">        throw new IllegalArgumentException(&quot;No suitable value to compute the billing category&quot;);</span>
+
+    }
+
+
+//
+//    public static void main(String args[]) throws Exception {
+//        WhoisQuery whoisQuery = new WhoisQuery();
+//        System.out.println(whoisQuery.run(whoisQuery.queryString));
+//
+//
+//    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

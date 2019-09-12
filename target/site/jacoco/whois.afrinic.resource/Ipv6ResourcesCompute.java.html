@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ipv6ResourcesCompute.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Size.net.afrinic</a> &gt; <a href="index.source.html" class="el_package">whois.afrinic.resource</a> &gt; <span class="el_source">Ipv6ResourcesCompute.java</span></div><h1>Ipv6ResourcesCompute.java</h1><pre class="source lang-java linenums">package whois.afrinic.resource;
+
+import net.afrinic.myafrinic.commons.whois.Ipv6Resource;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+<span class="fc" id="L11">public class Ipv6ResourcesCompute implements InternetResourceComputable {</span>
+    private static final String REGEX = &quot;(inet6num:) (.+)&quot;;
+
+    @Override
+    public Integer compute(String whoisResponse) {
+<span class="fc" id="L16">        List&lt;Ipv6Resource&gt; ipv6Resources = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L18">        Pattern resourcePattern = Pattern.compile(REGEX);</span>
+<span class="fc" id="L19">        Matcher matcher = resourcePattern.matcher(whoisResponse);</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        while (matcher.find()) {</span>
+<span class="fc" id="L21">            String ipv6Key = matcher.group(2).trim();</span>
+<span class="fc" id="L22">            Ipv6Resource ipv6Resource = Ipv6Resource.parse(ipv6Key);</span>
+<span class="fc" id="L23">            addToListIfNecessary(ipv6Resources, ipv6Resource);</span>
+<span class="fc" id="L24">        }</span>
+<span class="fc" id="L25">        BigInteger totalIps = computeTotalNbOfIpv6Addresses(ipv6Resources);</span>
+<span class="fc" id="L26">        return computeCidr(totalIps);</span>
+    }
+
+    private Integer computeCidr(BigInteger totalIps) {
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        return !BigInteger.ZERO.equals(totalIps) ? 128 - (totalIps.toString(2).length()) : null;</span>
+    }
+
+    private BigInteger computeTotalNbOfIpv6Addresses(List&lt;Ipv6Resource&gt; ipv6Resources) {
+<span class="fc" id="L34">        BigInteger total = BigInteger.ZERO;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        for (Ipv6Resource ipv6Resource : ipv6Resources) {</span>
+<span class="fc" id="L36">            total = total.add(ipv6Resource.end().subtract(ipv6Resource.begin())).add(BigInteger.ONE);</span>
+<span class="fc" id="L37">        }</span>
+<span class="fc" id="L38">        return total;</span>
+    }
+
+    private void addToListIfNecessary(List&lt;Ipv6Resource&gt; ipv6Resources, Ipv6Resource ipv6Resource) {
+<span class="fc" id="L42">        boolean contains = checkIfContains(ipv6Resources, ipv6Resource);</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if (!contains) {</span>
+<span class="fc" id="L44">            ipv6Resources.add(ipv6Resource);</span>
+        }
+<span class="fc" id="L46">    }</span>
+
+    private boolean checkIfContains(List&lt;Ipv6Resource&gt; ipv6Resources, Ipv6Resource candidateIpv6Resource) {
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        for (Ipv6Resource ipv6Resource : ipv6Resources) {</span>
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">            if (ipv6Resource.contains(candidateIpv6Resource)) {</span>
+<span class="nc" id="L51">                return true;</span>
+            }
+<span class="fc" id="L53">        }</span>
+
+        // no ipv6 resource in the list contains the candidate
+<span class="fc" id="L56">        return false;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

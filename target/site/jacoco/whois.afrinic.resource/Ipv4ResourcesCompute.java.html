@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ipv4ResourcesCompute.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Size.net.afrinic</a> &gt; <a href="index.source.html" class="el_package">whois.afrinic.resource</a> &gt; <span class="el_source">Ipv4ResourcesCompute.java</span></div><h1>Ipv4ResourcesCompute.java</h1><pre class="source lang-java linenums">package whois.afrinic.resource;
+
+import net.afrinic.myafrinic.commons.whois.Ipv4Resource;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+<span class="fc" id="L10">public class Ipv4ResourcesCompute implements InternetResourceComputable {</span>
+    private static final String REGEX = &quot;(inetnum:) (.+)&quot;;
+
+    @Override
+    public Integer compute(String whoisResponse) {
+<span class="fc" id="L15">        List&lt;Ipv4Resource&gt; ipv4Resources = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L17">        Pattern resourcePattern = Pattern.compile(REGEX);</span>
+<span class="fc" id="L18">        Matcher matcher = resourcePattern.matcher(whoisResponse);</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        while (matcher.find()) {</span>
+<span class="fc" id="L20">            String ipv4Key = matcher.group(2).trim();</span>
+<span class="fc" id="L21">            Ipv4Resource ipv4Resource = Ipv4Resource.parse(ipv4Key);</span>
+<span class="fc" id="L22">            addToListIfNecessary(ipv4Resources, ipv4Resource);</span>
+<span class="fc" id="L23">        }</span>
+
+        // at this stage, we have all the top level ipv4 blocks
+<span class="fc" id="L26">        int totalIps = computeTotalNbOfIpv4Addresses(ipv4Resources);</span>
+<span class="fc" id="L27">        return computeCidr(totalIps);</span>
+    }
+
+    private Integer computeCidr(int totalIps) {
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        return totalIps &gt; 0 ? 32 - Integer.toString(totalIps,2).length() : null;</span>
+    }
+
+    private int computeTotalNbOfIpv4Addresses(List&lt;Ipv4Resource&gt; ipv4Resources) {
+<span class="fc" id="L35">        int total = 0;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (Ipv4Resource ipv4Resource : ipv4Resources) {</span>
+<span class="fc" id="L37">            total += ipv4Resource.end().intValue() - ipv4Resource.begin().intValue() + 1;</span>
+<span class="fc" id="L38">        }</span>
+<span class="fc" id="L39">        return total;</span>
+    }
+
+    private void addToListIfNecessary(List&lt;Ipv4Resource&gt; ipv4Resources, Ipv4Resource ipv4Resource) {
+<span class="fc" id="L43">        boolean contains = checkIfContains(ipv4Resources, ipv4Resource);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (!contains  ) {</span>
+<span class="fc" id="L45">            ipv4Resources.add(ipv4Resource);</span>
+        }
+<span class="fc" id="L47">    }</span>
+
+    private boolean checkIfContains(List&lt;Ipv4Resource&gt; ipv4Resources, Ipv4Resource candidateIpv4Resource) {
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        for (Ipv4Resource ipv4Resource : ipv4Resources) {</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">            if (ipv4Resource.contains(candidateIpv4Resource)) {</span>
+<span class="fc" id="L52">                return true;</span>
+            }
+<span class="fc" id="L54">        }</span>
+
+        // no ipv4 resource in the list contains the candidate
+<span class="fc" id="L57">        return false;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

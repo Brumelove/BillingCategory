@@ -82,7 +82,6 @@ public enum BillingCategory {
 
         throw new IllegalArgumentException("Invalid billing category for " + resourceType + " corresponding to " + vCidr);
 
-
     }
 
 
