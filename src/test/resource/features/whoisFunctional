@@ -26,9 +26,10 @@ Feature: Functional test
       | ORG-CIL1-AFRINIC  | LIR extra large    |
       | ORG-EA20-AFRINIC  | LIR large          |
       | ORG-EM1-AFRINIC   | LIR extra large    |
+      | ORG-ACL6-AFRINIC  | LIR V6 Small       |
       | ORG-DE1-AFRINIC   | End-User AS and IP |
       | ORG-ASRL1-AFRINIC | End-User AS and IP |
-      | ORG-ACL6-AFRINIC  | End-User V6        |
+
 
 
 

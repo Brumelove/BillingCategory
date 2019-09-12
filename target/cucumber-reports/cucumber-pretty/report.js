@@ -140,7 +140,19 @@ formatter.step({
     },
     {
       "cells": [
+        "ORG-ACL6-AFRINIC",
+        "LIR V6 Small"
+      ]
+    },
+    {
+      "cells": [
         "ORG-DE1-AFRINIC",
+        "End-User AS and IP"
+      ]
+    },
+    {
+      "cells": [
+        "ORG-ASRL1-AFRINIC",
         "End-User AS and IP"
       ]
     }

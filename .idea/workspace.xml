@@ -2,13 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9063cb-f9a6-46d7-83dc-d38dc1af69ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/whois/afrinic/query/WhoisQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WhoisQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WhoisQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/features/whoisFunctional" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/features/whoisFunctional" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/whois/afrinic/billingcategory/BillingCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whois/afrinic/billingcategory/BillingCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/whois/afrinic/query/WhoisQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/whois/afrinic/query/WhoisQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Size.net.afrinic-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber-pretty/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.billingcategory/BillingCategory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.billingcategory/BillingCategory.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.billingcategory/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.billingcategory/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.query/WhoisQuery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.query/WhoisQuery.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.query/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.query/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/ASNResourcesCompute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/ASNResourcesCompute.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/Ipv4ResourcesCompute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/Ipv4ResourcesCompute.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/Ipv6ResourcesCompute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/Ipv6ResourcesCompute.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/whois.afrinic.resource/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-WhoisQueryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-WhoisQueryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/WhoisQueryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/WhoisQueryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WhoisQueryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WhoisQueryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/whoisFunctional" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,10 +80,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/whois/afrinic/billingcategory/BillingCategory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
               <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -292,6 +358,14 @@
               <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stepdefs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,19 +380,6 @@
               <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Size.net.afrinic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Size.net.afrinic" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="jacoco" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -400,7 +461,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WhoisQueryTest">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="WhoisQuery (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="whois.afrinic.query.WhoisQuery" />
       <module name="whois.net.afrinic.billingcategoriser" />
@@ -496,10 +557,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.WhoisQueryTest" />
         <item itemvalue="Application.WhoisQuery (1)" />
         <item itemvalue="JUnit.WhoisQueryTest.de1" />
-        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.WhoisQuery" />
       </list>
     </recent_temporary>
@@ -526,12 +587,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2019.09.11 at 08h 18m 44s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.09.11 at 08h 31m 47s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRunner - 2019.09.11 at 08h 32m 15s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
@@ -556,6 +611,12 @@
     <history-entry file="WhoisQueryTest - 2019.09.12 at 10h 06m 03s.xml">
       <configuration name="WhoisQueryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRunner - 2019.09.12 at 10h 13m 34s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRunner - 2019.09.12 at 10h 13m 50s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +631,7 @@
     <frame x="-12" y="23" width="697" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4259542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4259542" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.035842296" />
@@ -580,7 +641,7 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" sideWeight="0.49757674" weight="0.5695142" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3277592" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.48440066" visible="true" weight="0.39028475" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48440066" visible="true" weight="0.39028475" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4911147" weight="0.40703517" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -686,7 +747,7 @@
           <url>file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java</url>
           <line>34</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -915,13 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.6/commons-net-3.6-sources.jar!/org/apache/commons/net/SocketClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -971,16 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/afrinic/myafrinic/commons/1.0.7-SNAPSHOT/commons-1.0.7-20190514.090949-1.jar!/net/afrinic/myafrinic/commons/model/organisation/BillingCategory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1016,6 +1060,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/StepDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

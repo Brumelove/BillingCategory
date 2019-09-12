@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestRunner" time="4.985" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="TestRunner" time="5.246" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib"/>
@@ -64,5 +64,30 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Functional test" name="Aggregation" time="4.985"/>
+  <testcase classname="Functional test" name="Aggregation" time="5.246">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stepdefs.StepDefinition.all_resources_should_be_within_range_for_with_category(StepDefinition.java:38)
+	at ✽.All resources of ORG-HDL with Billing Category should be within range(src/test/resource/features/whoisFunctional:7)
+</failure>
+    <system-out>Feature: Functional test
+  As a tester
+  I want to aggregate for all resource type of member org-hdl
+  By calculating ipv4 allocation range
+
+  Scenario: Aggregation                                                        &amp;#27;[90m# src/test/resource/features/whoisFunctional:6&amp;#27;[0m
+    &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mAll resources of ORG-HDL with Billing Category should be within range&amp;#27;[0m &amp;#27;[90m# StepDefinition.all_resources_should_be_within_range_for_with_category(DataTable)&amp;#27;[0m
+      &amp;#27;[31mjunit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stepdefs.StepDefinition.all_resources_should_be_within_range_for_with_category(StepDefinition.java:38)
+	at ✽.All resources of ORG-HDL with Billing Category should be within range(src/test/resource/features/whoisFunctional:7)
+&amp;#27;[0m
+</system-out>
+  </testcase>
 </testsuite>
