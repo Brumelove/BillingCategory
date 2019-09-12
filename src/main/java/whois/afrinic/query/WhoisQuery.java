@@ -15,7 +15,7 @@ public class WhoisQuery {
 
 
     private String queryString = "-T inetnum -T inet6num -T aut-num -i org -K" +
-            " ORG-DE1-AFRINIC";
+            " ORG-ASRL1-AFRINIC";
 
     private Ipv4ResourcesCompute ipv4ResourcesCompute = new Ipv4ResourcesCompute();
     private Ipv6ResourcesCompute ipv6ResourcesCompute = new Ipv6ResourcesCompute();

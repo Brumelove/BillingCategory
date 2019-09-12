@@ -20,8 +20,8 @@ public enum BillingCategory {
     LIR_EXTRA_LARGE("LIR extra large", 1, 10, ResourceType.IPv4),
     IPV6_SMALL("LIR V6 Small", 32, 47, ResourceType.IPv6),
     IPV6_LARGE("LIR V6 Large", 0, 31, ResourceType.IPv6),
-    IPV6_PI_EU("LIR V6 PI EU", 48, 128, ResourceType.IPv6),
-    EU_AS("End-User AS", 0, Integer.MAX_VALUE, ResourceType.ASN);
+    IPV6_EU_PI("End-User V6", 48, 128, ResourceType.IPv6),
+    EU_AS("End-User AS and IP", 0, Integer.MAX_VALUE, ResourceType.ASN);
 
 
     private final static Map<ResourceType, Set<BillingCategory>> BY_RESOURCE_TYPE;

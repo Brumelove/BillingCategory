@@ -138,4 +138,21 @@ public class WhoisQueryTest {
         Assert.assertEquals(BillingCategory.EU_AS, response(" aut-num:        AS36893"));
 
     }
+    @Test
+    public void asrl1() {
+        Assert.assertEquals(BillingCategory.EU_AS, response(" aut-num:        AS37006"));
+
+    }
+    @Test
+    public void acl6() {
+        Assert.assertEquals(BillingCategory.IPV6_SMALL, response("% This is the AfriNIC Whois server.\n" +
+                "\n" +
+                "% Note: this output has been filtered.\n" +
+                "% Only primary keys and abuse contacts will be visible.\n" +
+                "% No other contact information will be shown.\n" +
+                "\n" +
+                "% No abuse contact registered for 2001:43f8:b40::/48\n" +
+                "\n" +
+                "inet6num:       2001:43f8:b40::/48"));
+    }
 }
